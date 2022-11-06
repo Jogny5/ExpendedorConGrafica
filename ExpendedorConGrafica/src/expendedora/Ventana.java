@@ -12,11 +12,11 @@ public class Ventana extends JFrame{
     
     public Ventana(){
         super();
-        setTitle("Título de ventana"); 
+        setTitle("Expendedora GUI"); 
         this.setLayout(new BorderLayout());
         this.add(new PanelPrincipal( ),BorderLayout.CENTER);
         
-        this.setSize(900,700);              
+        this.setSize(1000,800);              
         setLocationRelativeTo(null);                    
         //this.getContentPane().setBackground(Color.white); 
         

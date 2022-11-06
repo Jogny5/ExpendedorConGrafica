@@ -1,5 +1,8 @@
 package expendedora;
 
+import java.awt.Color;
+import java.awt.Graphics;
+
 class Moneda500 extends Moneda{
     
     public Moneda500(){
@@ -11,5 +14,11 @@ class Moneda500 extends Moneda{
         return 500;
     }
     
-     
+    public void paint(Graphics g, int x,int y){
+        
+        g.setColor(Color.orange);
+        g.fillOval(x, y, 10,10);
+        
+    } 
+    
 }

@@ -1,5 +1,7 @@
 package expendedora;
 
+import java.awt.Color;
+import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class Expendedor {
@@ -34,6 +36,11 @@ public class Expendedor {
             fanta.addBebida(f);
             
         }
+    }
+    
+    public void paint(Graphics g){ //se agrega para pintar rectángulo rojo
+       g.setColor(Color.blue);      //se unta el pincel g en color rojo
+       g.fillRect(40,40,50,30);    //se le dice al pincel pinte rectángulo
     }
     
     public Bebida comprarBebida(Moneda m, int cual){

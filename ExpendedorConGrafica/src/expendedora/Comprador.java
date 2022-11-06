@@ -1,5 +1,7 @@
 package expendedora;
 
+import java.awt.Color;
+import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class Comprador {
@@ -12,6 +14,11 @@ public class Comprador {
         m=mon;
         cualBebida=beb;
         exp=e;
+    }
+    
+    public void paint(Graphics g){ 
+       g.setColor(Color.red);      
+       g.fillOval(10, 20, 10, 10);
     }
     
     

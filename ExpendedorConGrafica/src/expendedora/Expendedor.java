@@ -39,8 +39,22 @@ public class Expendedor {
     }
     
     public void paint(Graphics g){ //se agrega para pintar rectángulo rojo
-       g.setColor(Color.blue);      //se unta el pincel g en color rojo
-       g.fillRect(40,40,50,30);    //se le dice al pincel pinte rectángulo
+       g.setColor(Color.gray);      //se unta el pincel g en color rojo
+       g.fillRect(200,40,450,600);    //se le dice al pincel pinte rectángulo
+       
+        Bebida cc;
+        Bebida ss;
+        Bebida ff;
+        for(int i=0;i<numBebidas;i++){
+            cc=new CocaCola(i);
+            cc.paint(g,230+i*(200/numBebidas),45);
+            
+            ss=new Sprite(i);
+            ss.paint(g,230+i*(200/numBebidas),145);
+            
+            ff=new Fanta(i);
+            ff.paint(g,230+i*(200/numBebidas),245);
+        }
     }
     
     public Bebida comprarBebida(Moneda m, int cual){

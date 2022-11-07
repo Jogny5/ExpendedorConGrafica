@@ -1,6 +1,7 @@
 package expendedora;
 
 import java.util.ArrayList;
+import java.awt.Graphics;
 
 abstract class Bebida {
     
@@ -15,5 +16,10 @@ abstract class Bebida {
 
     public int getSerie() {
         return serie;
+    }
+    
+    public void paint(Graphics g,int x,int y){
+        
+        g.fillRect(x,y,40,60);
     }
 }

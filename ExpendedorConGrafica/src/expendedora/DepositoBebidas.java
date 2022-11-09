@@ -30,4 +30,10 @@ public class DepositoBebidas {
         }
         
     }
+    
+    public Bebida revisarBebida(int i){
+        
+            return aa.get(i);
+        
+    }
 }

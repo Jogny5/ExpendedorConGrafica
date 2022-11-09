@@ -13,7 +13,7 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
     private Expendedor exp; 
     
     public PanelPrincipal(){
-        exp=new Expendedor(3,200);
+        exp=new Expendedor(4,200);
         Moneda1500 m1=new Moneda1500();
         com=new Comprador(m1,2,exp);
         this.setBackground(Color.white);

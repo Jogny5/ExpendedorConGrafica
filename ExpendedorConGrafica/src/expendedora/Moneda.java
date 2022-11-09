@@ -1,4 +1,6 @@
 package expendedora;
+import java.awt.Color;
+import java.awt.Graphics;
 
 abstract class Moneda {
     
@@ -12,6 +14,8 @@ abstract class Moneda {
     }
     public abstract int getValor();
     
-    
+    public void paint(Graphics g, int x,int y){
+        
+    }
     
 }

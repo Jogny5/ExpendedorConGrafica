@@ -13,12 +13,12 @@ class Moneda500 extends Moneda{
     public int getValor() {
         return 500;
     }
-    
+        
     public void paint(Graphics g, int x,int y){
         
-        g.setColor(Color.orange);
-        g.fillOval(x, y, 10,10);
+        g.setColor(Color.yellow);        
+        g.fillOval(x,y,40,40);
         
-    } 
-    
+    }
+   
 }

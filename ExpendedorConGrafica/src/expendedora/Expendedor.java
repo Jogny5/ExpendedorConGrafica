@@ -43,11 +43,11 @@ public class Expendedor {
        g.fillRect(200,40,450,600);    //se le dice al pincel pinte rectángulo
        
         for(int i=0;i<numBebidas;i++){
-            coca.revisarBebida(i).paint(g,230+i*(200/numBebidas),45);
+            coca.revisarBebida(i).paint(g,230,520-i*(550/numBebidas));
             
-            sprite.revisarBebida(i).paint(g,230+i*(200/numBebidas),145);
+            sprite.revisarBebida(i).paint(g,400,520-i*(550/numBebidas));
             
-            fanta.revisarBebida(i).paint(g,230+i*(200/numBebidas),245);
+            fanta.revisarBebida(i).paint(g,570,520-i*(550/numBebidas));
         }
     }
     

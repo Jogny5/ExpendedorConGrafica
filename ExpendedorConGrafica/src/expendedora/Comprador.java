@@ -18,7 +18,7 @@ public class Comprador {
     
     public void paint(Graphics g){ 
        g.setColor(new Color(252, 208, 180));      
-       g.fillOval(10, 20, 50, 50);
+       g.fillOval(30, 70, 100, 100);
        /*
        g.setColor(Color.RED);
        g.fillRect(10,40,20,30);

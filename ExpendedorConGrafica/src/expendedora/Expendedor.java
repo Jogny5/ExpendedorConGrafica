@@ -40,14 +40,14 @@ public class Expendedor {
     
     public void paint(Graphics g){ //se agrega para pintar rectángulo rojo
        g.setColor(Color.gray);      //se unta el pincel g en color rojo
-       g.fillRect(200,40,450,600);    //se le dice al pincel pinte rectángulo
+       g.fillRect(300,40,450,600);    //se le dice al pincel pinte rectángulo
        
         for(int i=0;i<numBebidas;i++){
-            coca.revisarBebida(i).paint(g,230,520-i*(550/numBebidas));
+            coca.revisarBebida(i).paint(g,330,520-i*(550/numBebidas));
             
-            sprite.revisarBebida(i).paint(g,400,520-i*(550/numBebidas));
+            sprite.revisarBebida(i).paint(g,500,520-i*(550/numBebidas));
             
-            fanta.revisarBebida(i).paint(g,570,520-i*(550/numBebidas));
+            fanta.revisarBebida(i).paint(g,670,520-i*(550/numBebidas));
         }
     }
     

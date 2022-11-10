@@ -9,7 +9,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingConstants;
 
 public class Ventana extends JFrame{
-    
+        
     public Ventana(){
         super();
         setTitle("Expendedora GUI"); 
@@ -24,6 +24,6 @@ public class Ventana extends JFrame{
         this.setVisible(true); 
         
     }
-    
+   
        
 }

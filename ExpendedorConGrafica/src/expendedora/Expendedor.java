@@ -48,12 +48,22 @@ public class Expendedor {
        g.setColor(Color.gray);      //se unta el pincel g en color rojo
        g.fillRect(300,40,450,600);    //se le dice al pincel pinte rectángulo
        
-        for(int i=0;i<numBebidas;i++){
+        int i=0;
+        while(i+1<coca.getSize()){
             coca.revisarBebida(i).paint(g,365,450-i*(350/numBebidas));
-            
+            i++;
+        }
+        
+        i=0;    
+        while(i+1<sprite.getSize()){   
             sprite.revisarBebida(i).paint(g,515,450-i*(350/numBebidas));
+            i++;
+        }
             
-            fanta.revisarBebida(i).paint(g,665,450-i*(350/numBebidas));
+        i=0;
+        while(i+1<fanta.getSize()){
+        fanta.revisarBebida(i).paint(g,665,450-i*(350/numBebidas));
+            i++;
         }
     }
     
@@ -200,6 +210,10 @@ public class Expendedor {
 
     public DepositoVuelto getDv() {
         return dv;
+    }
+    
+    public DepositoVenta getDVenta() {
+        return dVenta;
     }
 
    

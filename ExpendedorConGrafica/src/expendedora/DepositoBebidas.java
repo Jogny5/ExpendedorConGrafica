@@ -36,4 +36,9 @@ public class DepositoBebidas {
             return aa.get(i);
         
     }
+    
+    public int getSize(){
+        
+        return aa.size();
+    }
 }

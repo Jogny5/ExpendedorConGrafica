@@ -40,23 +40,24 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
     public void paint(Graphics g){
         super.paint(g);
         exp.paint(g);
-        com.paint(g);  
+        com.paint(g);
+        exp.getDVenta().paint(g);
     }
     
     public void Botones(){
         JButton boton1=new JButton("CocaCola");
-        boton1.setBounds(305,550,100,40);
+        boton1.setBounds(305,500,100,40);
         
         this.add(boton1);
         boton1.addActionListener(boton1accion);
         
         JButton boton2=new JButton("Sprite");
-        boton2.setBounds(475,550,100,40);
+        boton2.setBounds(475,500,100,40);
         this.add(boton2);
         boton2.addActionListener(boton2accion);
         
         JButton boton3=new JButton("Fanta");
-        boton3.setBounds(645,550,100,40);
+        boton3.setBounds(645,500,100,40);
         
         this.add(boton3);
         boton3.addActionListener(boton3accion);
@@ -78,7 +79,7 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
         public void actionPerformed(ActionEvent e) {
             exp.comprarBebida(m, 1);
             
-            MenosCocacola();
+            repaint();
         }
     };
     

@@ -26,7 +26,7 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
     
     public PanelPrincipal(){
         this.setLayout(null);
-        exp=new Expendedor(15,200);
+        exp=new Expendedor(5,200);
         Moneda100 m1=new Moneda100();
         com=new Comprador(m1,2,exp);
         this.setBackground(Color.white);
@@ -77,22 +77,19 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
     ActionListener boton1accion=new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
+            
             exp.comprarBebida(m, 1);
             
             repaint();
         }
     };
     
-    public void MenosCocacola(){
-        
-        
-    }
-    
     ActionListener boton2accion=new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
             exp.comprarBebida(m, 2);
             
+            repaint();
         }
     };
     
@@ -101,6 +98,7 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
         public void actionPerformed(ActionEvent e) {
             exp.comprarBebida(m, 3);
             
+            repaint();
         }
     };
     

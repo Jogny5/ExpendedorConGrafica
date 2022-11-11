@@ -49,19 +49,19 @@ public class Expendedor {
        g.fillRect(300,40,450,600);    //se le dice al pincel pinte rectángulo
        
         int i=0;
-        while(i+1<coca.getSize()){
+        while(i<coca.getSize()){
             coca.revisarBebida(i).paint(g,365,450-i*(350/numBebidas));
             i++;
         }
         
         i=0;    
-        while(i+1<sprite.getSize()){   
+        while(i<sprite.getSize()){   
             sprite.revisarBebida(i).paint(g,515,450-i*(350/numBebidas));
             i++;
         }
             
         i=0;
-        while(i+1<fanta.getSize()){
+        while(i<fanta.getSize()){
         fanta.revisarBebida(i).paint(g,665,450-i*(350/numBebidas));
             i++;
         }
@@ -83,7 +83,7 @@ public class Expendedor {
         
         if(cual ==1){
           
-            if(coca.getBebida()==null){
+            if(coca.revisarBebida(0)==null){
               
                 try{
                     throw new NoHayBebidaException("No hay bebida");
@@ -117,7 +117,7 @@ public class Expendedor {
         
         if(cual ==2){
            
-            if(sprite.getBebida()==null){
+            if(sprite.revisarBebida(0)==null){
                 
                 try{
                     throw new NoHayBebidaException("No hay bebida");
@@ -151,7 +151,7 @@ public class Expendedor {
         
         if(cual ==3){
             
-            if(fanta.getBebida()==null){
+            if(fanta.revisarBebida(0)==null){
                
                 try{
                     throw new NoHayBebidaException("No hay bebida");

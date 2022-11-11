@@ -4,6 +4,8 @@ import java.awt.Color;
 import java.awt.FlowLayout;
 import java.awt.Graphics;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
@@ -15,6 +17,12 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
     
     private Comprador com; 
     private Expendedor exp;
+    private Moneda m;
+    
+    private int numCoca;
+    private int numSprite;
+    private int numFanta;
+    
     
     public PanelPrincipal(){
         this.setLayout(null);
@@ -22,6 +30,8 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
         Moneda100 m1=new Moneda100();
         com=new Comprador(m1,2,exp);
         this.setBackground(Color.white);
+        
+        m=new Moneda1500();
         
         this.addMouseListener(this);
         Botones();
@@ -38,15 +48,18 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
         boton1.setBounds(305,570,100,40);
         boton1.setLocation(305,570);
         this.add(boton1);
+        boton1.addActionListener(boton1accion);
         
         JButton boton2=new JButton("Sprite");
         boton2.setBounds(475,570,100,40);
         boton2.setLocation(475,570);
         this.add(boton2);
+        boton2.addActionListener(boton2accion);
         
         JButton boton3=new JButton("Fanta");
         boton3.setBounds(645,570,100,40);
         this.add(boton3);
+        boton3.addActionListener(boton3accion);
     }
     
     public void Texto(){
@@ -60,7 +73,37 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
         
     }
     
-    public void mouseClicked(MouseEvent me) {} ;
+    ActionListener boton1accion=new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            exp.comprarBebida(m, 1);
+            
+            MenosCocacola();
+        }
+    };
+    
+    public void MenosCocacola(){
+        
+        
+    }
+    
+    ActionListener boton2accion=new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            exp.comprarBebida(m, 2);
+            
+        }
+    };
+    
+    ActionListener boton3accion=new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            exp.comprarBebida(m, 3);
+            
+        }
+    };
+    
+    public void mouseClicked(MouseEvent me) {};
     public void mousePressed(MouseEvent me) {
         System.out.println("press"); 
     }

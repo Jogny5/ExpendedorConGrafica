@@ -27,6 +27,9 @@ public class Expendedor {
         fanta = new DepositoBebidas();
         
         dv = new DepositoVuelto();
+        ddinero = new DepositoDinero();
+        
+        dVenta= new DepositoVenta();        
         
         for(int i=1;i<numBebidas+1;i++){
             
@@ -46,11 +49,11 @@ public class Expendedor {
        g.fillRect(300,40,450,600);    //se le dice al pincel pinte rectángulo
        
         for(int i=0;i<numBebidas;i++){
-            coca.revisarBebida(i).paint(g,330,520-i*(550/numBebidas));
+            coca.revisarBebida(i).paint(g,365,450-i*(350/numBebidas));
             
-            sprite.revisarBebida(i).paint(g,500,520-i*(550/numBebidas));
+            sprite.revisarBebida(i).paint(g,515,450-i*(350/numBebidas));
             
-            fanta.revisarBebida(i).paint(g,670,520-i*(550/numBebidas));
+            fanta.revisarBebida(i).paint(g,665,450-i*(350/numBebidas));
         }
     }
     

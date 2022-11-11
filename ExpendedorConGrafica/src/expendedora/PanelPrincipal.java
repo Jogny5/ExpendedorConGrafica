@@ -26,7 +26,7 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
     
     public PanelPrincipal(){
         this.setLayout(null);
-        exp=new Expendedor(7,200);
+        exp=new Expendedor(15,200);
         Moneda100 m1=new Moneda100();
         com=new Comprador(m1,2,exp);
         this.setBackground(Color.white);
@@ -45,19 +45,19 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
     
     public void Botones(){
         JButton boton1=new JButton("CocaCola");
-        boton1.setBounds(305,570,100,40);
-        boton1.setLocation(305,570);
+        boton1.setBounds(305,550,100,40);
+        
         this.add(boton1);
         boton1.addActionListener(boton1accion);
         
         JButton boton2=new JButton("Sprite");
-        boton2.setBounds(475,570,100,40);
-        boton2.setLocation(475,570);
+        boton2.setBounds(475,550,100,40);
         this.add(boton2);
         boton2.addActionListener(boton2accion);
         
         JButton boton3=new JButton("Fanta");
-        boton3.setBounds(645,570,100,40);
+        boton3.setBounds(645,550,100,40);
+        
         this.add(boton3);
         boton3.addActionListener(boton3accion);
     }

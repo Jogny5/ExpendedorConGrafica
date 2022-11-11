@@ -13,6 +13,9 @@ public class Expendedor {
     private DepositoBebidas fanta;
     
     private DepositoVuelto dv;
+    private DepositoDinero ddinero;
+    
+    private DepositoVenta dVenta;
     
     public Expendedor(int num, int precio){
         
@@ -51,7 +54,7 @@ public class Expendedor {
         }
     }
     
-    public Bebida comprarBebida(Moneda m, int cual){
+    public void comprarBebida(Moneda m, int cual){
         
         
         if(m!=null && m.getValor()<precioBebidas){
@@ -63,7 +66,6 @@ public class Expendedor {
             }
             
             dv.addMonedas(m);
-            return null;
         }
         
         if(cual ==1){
@@ -76,8 +78,7 @@ public class Expendedor {
                     System.out.println(e.getMessage());
                 }
                 
-                dv.addMonedas(m);
-                return null;
+                dv.addMonedas(m);                
             }
             
             else if(m==null){
@@ -86,7 +87,6 @@ public class Expendedor {
                 }catch(PagoIncorrectoException e){
                     System.out.println(e.getMessage());
                 }
-                return null;
             }
             
             else{
@@ -96,7 +96,9 @@ public class Expendedor {
                     dv.addMonedas(mon);
                 }
                 
-                return coca.getBebida();
+                ddinero.addMonedas(m);
+                
+                dVenta.compra(coca.getBebida());
             }
         }
         
@@ -111,7 +113,6 @@ public class Expendedor {
                 }
                 
                 dv.addMonedas(m);
-                return null;
             }
             
             else if(m==null){
@@ -120,7 +121,6 @@ public class Expendedor {
                 }catch(PagoIncorrectoException e){
                     System.out.println(e.getMessage());
                 }
-                return null;
             }
             
             else{
@@ -130,7 +130,9 @@ public class Expendedor {
                     dv.addMonedas(mon);
                 }
                 
-                return sprite.getBebida();
+                ddinero.addMonedas(m);
+                
+                dVenta.compra(sprite.getBebida());
             }    
         }
         
@@ -144,8 +146,7 @@ public class Expendedor {
                     System.out.println(e.getMessage());
                 }
                 
-                dv.addMonedas(m);
-                return null;
+                dv.addMonedas(m);               
             }
             
             else if(m==null){
@@ -154,7 +155,6 @@ public class Expendedor {
                 }catch(PagoIncorrectoException e){
                     System.out.println(e.getMessage());
                 }
-                return null;
             }
             
             else{
@@ -164,7 +164,9 @@ public class Expendedor {
                     dv.addMonedas(mon);
                 }
                 
-                return fanta.getBebida();
+                ddinero.addMonedas(m);
+                
+                dVenta.compra(fanta.getBebida());
             }   
         }
         
@@ -178,7 +180,6 @@ public class Expendedor {
                 System.out.println(e.getMessage());
             }
             dv.addMonedas(m);
-            return null;
         }
         
         

@@ -26,7 +26,7 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
     
     public PanelPrincipal(){
         this.setLayout(null);
-        exp=new Expendedor(5,200);
+        exp=new Expendedor(15,200);
         Moneda100 m1=new Moneda100();
         com=new Comprador(m1,2,exp);
         this.setBackground(Color.white);
@@ -40,8 +40,7 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
     public void paint(Graphics g){
         super.paint(g);
         exp.paint(g);
-        com.paint(g);
-        exp.getDVenta().paint(g);
+        com.paint(g);  
     }
     
     public void Botones(){

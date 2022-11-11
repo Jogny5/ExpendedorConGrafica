@@ -1,5 +1,7 @@
 package expendedora;
 
+import java.awt.Color;
+import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class DepositoBebidas {
@@ -40,5 +42,13 @@ public class DepositoBebidas {
     public int getSize(){
         
         return aa.size();
+    }
+    
+    public void paint(Graphics g,int x ,int y){
+        
+        g.setColor(Color.darkGray);
+        g.fillRect(x,y,70,360);
+        
+        
     }
 }

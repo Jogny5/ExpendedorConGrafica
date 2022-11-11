@@ -1,5 +1,7 @@
 package expendedora;
 
+import java.awt.Color;
+import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class DepositoVuelto {
@@ -35,5 +37,20 @@ public class DepositoVuelto {
     }
     public int tamano(){
         return aa.size();
+    }
+    
+    public void paint(Graphics g){
+        
+        g.setColor(Color.black);
+        g.fillRect(335,550,60,60);
+        
+        int i=0;
+        
+        while(i<aa.size()){
+            
+            aa.get(i).paint(g,345,560);
+            i++;
+        }
+        
     }
 }

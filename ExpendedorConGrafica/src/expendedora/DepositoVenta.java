@@ -32,7 +32,7 @@ public class DepositoVenta {
     public void paint(Graphics g){
         
         g.setColor(Color.black);
-        g.fillRect(650,560,30,40);
+        g.fillRect(640,550,30,40);
         if(venta!=null){
             venta.paint(g, 650, 560);
         }

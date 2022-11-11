@@ -1,11 +1,12 @@
 package expendedora;
 
+import java.awt.Color;
+import java.awt.Graphics;
 import java.util.ArrayList;
 
 public class DepositoDinero {
     
     private final ArrayList<Moneda> aa;
-    private int tamano;
         
     public DepositoDinero(){
         
@@ -16,4 +17,6 @@ public class DepositoDinero {
         
         this.aa.add(m);   
     }
+    
+
 }

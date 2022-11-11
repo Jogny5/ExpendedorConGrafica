@@ -9,11 +9,10 @@ import java.awt.event.ActionListener;
 import javax.swing.JPanel;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionListener;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 
-public class PanelPrincipal extends JPanel implements MouseListener, MouseMotionListener{
+public class PanelPrincipal extends JPanel implements MouseListener{
     
     private Comprador com; 
     private Expendedor exp;
@@ -101,16 +100,35 @@ public class PanelPrincipal extends JPanel implements MouseListener, MouseMotion
         }
     };
     
-    public void mouseClicked(MouseEvent me) {};
+    @Override
+    public void mouseClicked(MouseEvent me){};
+    
+    @Override
     public void mousePressed(MouseEvent me) {
-        System.out.println("press"); 
+        
+        int x=me.getX();
+        int y=me.getY();
+        
+        if(x>335&& x<395 && y>550 && y<610){
+            
+            exp.getVuelto();
+        }
+        
+        if(x>640 && x<670 && y>550 && y<590){
+            
+            exp.getDVenta().getBebida();
+        }
+        
+        repaint();
     }
+    @Override
     public void mouseReleased(MouseEvent me) {} ;
+    @Override
     public void mouseEntered(MouseEvent me) {} ; 
+    @Override
     public void mouseExited(MouseEvent me) {};    
     
-    public void mouseDragged(MouseEvent me) {};
-    public void mouseMoved(MouseEvent me) {};
+
     
 }
     

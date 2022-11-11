@@ -37,6 +37,7 @@ public class DepositoVenta {
             venta.paint(g, 650, 560);
         }
         
+        
     }
     
 }

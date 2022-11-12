@@ -16,7 +16,7 @@ class Moneda1000 extends Moneda{
     
     public void paint(Graphics g, int x,int y){
         
-        g.setColor(Color.yellow);        
+        g.setColor(Color.blue);        
         g.fillOval(x,y,40,40);
         
     }

@@ -13,10 +13,7 @@ public class DepositoVenta {
     
     public void compra(Bebida b){
         
-        if(venta==null){
-            
-            venta=b;
-        }
+        venta=b;
     }
     
     public Bebida getBebida(){

@@ -119,7 +119,7 @@ public class Expendedor {
             dv.addMonedas(m);
         }
         
-        if(cual ==1){
+        else if(cual ==1){
           
             if(coca.revisarBebida(0)==null){
               
@@ -153,7 +153,7 @@ public class Expendedor {
             }
         }
         
-        if(cual ==2){
+        else if(cual ==2){
            
             if(sprite.revisarBebida(0)==null){
                 
@@ -184,10 +184,11 @@ public class Expendedor {
                 ddinero.addMonedas(m);
                 
                 dVenta.compra(sprite.getBebida());
+                
             }    
         }
         
-        if(cual ==3){
+        else if(cual ==3){
             
             if(fanta.revisarBebida(0)==null){
                
@@ -218,6 +219,7 @@ public class Expendedor {
                 ddinero.addMonedas(m);
                 
                 dVenta.compra(fanta.getBebida());
+               
             }   
         }
         

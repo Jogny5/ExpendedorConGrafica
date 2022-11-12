@@ -75,6 +75,36 @@ public class Expendedor {
         
     }
     
+    public void RellenarDBebida(int x){
+        
+        if(x==1){
+            
+          while(coca.getSize()<numBebidas){
+              
+              CocaCola c = new CocaCola(coca.getSize());
+              coca.addBebida(c);
+          }  
+        }
+        
+        if(x==2){
+            
+          while(sprite.getSize()<numBebidas){
+              
+              Sprite s = new Sprite(sprite.getSize());
+              sprite.addBebida(s);
+          }  
+        }
+        
+        if(x==3){
+            
+          while(fanta.getSize()<numBebidas){
+              
+              Fanta f = new Fanta(fanta.getSize());
+              fanta.addBebida(f);
+          }  
+        }
+    }
+    
     public void comprarBebida(Moneda m, int cual){
         
         

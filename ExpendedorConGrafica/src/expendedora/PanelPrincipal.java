@@ -119,6 +119,22 @@ public class PanelPrincipal extends JPanel implements MouseListener{
             exp.getDVenta().getBebida();
         }
         
+        if(x>335 && x<405 && y>120 && y<480){
+            
+            exp.RellenarDBebida(1);
+        }
+        
+        if(x>485 && x<555 && y>120 && y<480){
+            
+            exp.RellenarDBebida(2);
+        }
+        
+        if(x>635 && x<705 && y>120 && y<480){
+            
+            exp.RellenarDBebida(3);
+        }
+        
+        
         repaint();
     }
     @Override

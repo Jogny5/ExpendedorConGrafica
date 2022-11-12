@@ -46,7 +46,7 @@ public class DepositoVuelto {
         
         int i=0;
         
-        while(i<aa.size()){
+        while(aa.size()>0 && i<aa.size()){
             
             aa.get(i).paint(g,345,560);
             i++;

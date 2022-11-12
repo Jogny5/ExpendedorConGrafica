@@ -16,6 +16,16 @@ public class DepositoVenta {
         venta=b;
     }
     
+    public int estaLleno(){
+        
+        if(venta!=null){
+            
+            return 0;
+        }
+        
+        else return 1;
+    }  
+    
     public Bebida getBebida(){
         
         Bebida x = venta;

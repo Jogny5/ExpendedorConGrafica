@@ -108,7 +108,16 @@ public class Expendedor {
     public void comprarBebida(Moneda m, int cual){
         
         
-        if(m!=null && m.getValor()<precioBebidas){
+        if(dVenta.estaLleno()==0){
+            
+            try{
+                throw new DepositoVentaLlenoException("El Deposito de Bebidas Vendidas esta lleno");        
+            }catch(DepositoVentaLlenoException e){
+                System.out.println(e.getMessage());
+            }  
+        }
+        
+        else if(m!=null && m.getValor()<precioBebidas){
             
             try{
                 throw new PagoInsuficienteException("No tienes dinero suficiente");        
@@ -118,6 +127,7 @@ public class Expendedor {
             
             dv.addMonedas(m);
         }
+        
         
         else if(cual ==1){
           

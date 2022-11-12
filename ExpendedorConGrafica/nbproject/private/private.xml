@@ -4,14 +4,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/diego/OneDrive/Escritorio/Github/ExpendedorConGrafica/ExpendedorConGrafica/src/expendedora/DepositoVuelto.java</file>
-            <file>file:/C:/Users/diego/OneDrive/Escritorio/Github/ExpendedorConGrafica/ExpendedorConGrafica/src/expendedora/Cocacola.java</file>
             <file>file:/C:/Users/diego/OneDrive/Escritorio/Github/ExpendedorConGrafica/ExpendedorConGrafica/src/expendedora/Expendedor.java</file>
             <file>file:/C:/Users/diego/OneDrive/Escritorio/Github/ExpendedorConGrafica/ExpendedorConGrafica/src/expendedora/PanelPrincipal.java</file>
-            <file>file:/C:/Users/diego/OneDrive/Escritorio/Github/ExpendedorConGrafica/ExpendedorConGrafica/src/expendedora/DepositoDinero.java</file>
-            <file>file:/C:/Users/diego/OneDrive/Escritorio/Github/ExpendedorConGrafica/ExpendedorConGrafica/src/expendedora/DepositoBebidas.java</file>
-            <file>file:/C:/Users/diego/OneDrive/Escritorio/Github/ExpendedorConGrafica/ExpendedorConGrafica/src/expendedora/Moneda100.java</file>
             <file>file:/C:/Users/diego/OneDrive/Escritorio/Github/ExpendedorConGrafica/ExpendedorConGrafica/src/expendedora/DepositoVenta.java</file>
             <file>file:/C:/Users/diego/OneDrive/Escritorio/Github/ExpendedorConGrafica/ExpendedorConGrafica/src/expendedora/Expendedora.java</file>
+            <file>file:/C:/Users/diego/OneDrive/Escritorio/Github/ExpendedorConGrafica/ExpendedorConGrafica/src/expendedora/Comprador.java</file>
         </group>
     </open-files>
 </project-private>

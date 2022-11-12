@@ -138,6 +138,8 @@ public class PanelPrincipal extends JPanel implements MouseListener{
             exp.comprarBebida(m, 1);
             
             repaint();
+            
+            m=null;
         }
     };
     
@@ -147,6 +149,8 @@ public class PanelPrincipal extends JPanel implements MouseListener{
             exp.comprarBebida(m, 2);
             
             repaint();
+            
+            m=null;
         }
     };
     
@@ -156,6 +160,8 @@ public class PanelPrincipal extends JPanel implements MouseListener{
             exp.comprarBebida(m, 3);
             
             repaint();
+            
+            m=null;
         }
     };
     

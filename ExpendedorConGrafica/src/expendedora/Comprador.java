@@ -30,10 +30,10 @@ public class Comprador {
        Moneda1000 m3=new Moneda1000();
        Moneda1500 m4=new Moneda1500();
        
-       m1.paint(g,45,650);
-       m2.paint(g,85,650);
-       m3.paint(g,125,650);
-       m4.paint(g,165,650);
+       m1.paint(g,35,600);
+       m2.paint(g,95,600);
+       m3.paint(g,155,600);
+       m4.paint(g,215,600);
        
     }
     

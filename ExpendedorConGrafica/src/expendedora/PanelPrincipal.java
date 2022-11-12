@@ -26,7 +26,7 @@ public class PanelPrincipal extends JPanel implements MouseListener{
     public PanelPrincipal(){
         this.setLayout(null);
         exp=new Expendedor(15,200);
-        Moneda100 m1=new Moneda100();
+        Moneda500 m1=new Moneda500();
         com=new Comprador(m1,2,exp);
         this.setBackground(Color.white);
         
@@ -56,14 +56,33 @@ public class PanelPrincipal extends JPanel implements MouseListener{
         
         JButton boton3=new JButton("Fanta");
         boton3.setBounds(645,500,100,40);
-        
         this.add(boton3);
         boton3.addActionListener(boton3accion);
+        
+        JButton BotonMoneda100=new JButton("100");
+        BotonMoneda100.setBounds(25,660,55,30);
+        this.add(BotonMoneda100);
+        BotonMoneda100.addActionListener(Moneda100accion);
+        
+        JButton BotonMoneda500=new JButton("500");
+        BotonMoneda500.setBounds(85,660,55,30);
+        this.add(BotonMoneda500);
+        BotonMoneda500.addActionListener(Moneda500accion);
+        
+        JButton BotonMoneda1000=new JButton("1000");
+        BotonMoneda1000.setBounds(145,660,65,30);
+        this.add(BotonMoneda1000);
+        BotonMoneda1000.addActionListener(Moneda1000accion);
+        
+        JButton BotonMoneda1500=new JButton("1500");
+        BotonMoneda1500.setBounds(215,660,65,30);
+        this.add(BotonMoneda1500);
+        BotonMoneda1500.addActionListener(Moneda1500accion);
     }
     
     public void Texto(){
         JLabel texto=new JLabel("Monedas");
-        texto.setBounds(85,600,100,40);
+        texto.setBounds(85,550,100,40);
         this.add(texto);
         
         JLabel textoComprador=new JLabel("Comprador");
@@ -71,6 +90,46 @@ public class PanelPrincipal extends JPanel implements MouseListener{
         this.add(textoComprador);
         
     }
+    
+    ActionListener Moneda100accion=new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            
+            m=new Moneda100();
+            com=new Comprador(m,1,exp);
+            
+        }
+    };
+    
+    ActionListener Moneda500accion=new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            
+            m=new Moneda500();
+            com=new Comprador(m,1,exp);
+            
+        }
+    };
+    
+    ActionListener Moneda1000accion=new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            
+            m=new Moneda1000();
+            com=new Comprador(m,1,exp);
+            
+        }
+    };
+    
+    ActionListener Moneda1500accion=new ActionListener() {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            
+            m=new Moneda1500();
+            com=new Comprador(m,1,exp);
+            
+        }
+    };
     
     ActionListener boton1accion=new ActionListener() {
         @Override
